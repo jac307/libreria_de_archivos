@@ -39,17 +39,12 @@
     <script>
       const fileData = {
   "imagenes": [
-    "montana.jpg",
-    "montana.jpg",
-    "montana.jpg",
     "montana.jpg"
   ],
   "videos": [
-    "sky.mp4",
     "sky.mp4"
   ],
   "audios": [
-    "lullaby.mp3",
     "lullaby.mp3"
   ]
 };
@@ -57,7 +52,7 @@
       // Function to copy text to clipboard
       function copyToClipboard(text) {
         navigator.clipboard.writeText(text).then(() => {
-          alert('Link copied to clipboard!');
+          alert('El link ha sido copiado!');
         }, (err) => {
           console.error('Could not copy text: ', err);
         });
