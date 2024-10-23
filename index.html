@@ -1,3 +1,4 @@
+
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -36,7 +37,15 @@
     <table id="audios"></table>
 
     <script>
-      const fileData = ${fileDataString};
+      const fileData = {
+  "imagenes": [
+    "montana.jpg"
+  ],
+  "videos": [
+    "lullaby.mp3"
+  ],
+  "audios": []
+};
 
       // Function to copy text to clipboard
       function copyToClipboard(text) {
@@ -55,7 +64,7 @@
 
         fileList.forEach(fileName => {
           const encodedFileName = encodeURIComponent(fileName); // Encode filename for URL
-          const linkUrl = \`https://jac307.github.io/libreria_de_archivos/\${category}/\${encodedFileName}\`;
+          const linkUrl = `https://jac307.github.io/libreria_de_archivos/${category}/${encodedFileName}`;
           const row = document.createElement('tr');
           
           // Create cells
