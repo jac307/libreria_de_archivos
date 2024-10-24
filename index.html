@@ -39,7 +39,8 @@
     <script>
       const fileData = {
   "imagenes": [
-    "montana.jpg"
+    "montana.jpg",
+    "tumblr_04c674a08233f4c0c34c0df1c9b7dbd1_6b4c2688_2048.jpg"
   ],
   "videos": [
     "sky.mp4"
@@ -62,7 +63,7 @@
       function populateLinks(category, elementId) {
         const fileList = fileData[category];
         const tableElement = document.getElementById(elementId);
-        tableElement.innerHTML = '<tr><th>Nombre Del Archivo</th><th>Link</th><th>Accion</th></tr>'; // Add headers
+        tableElement.innerHTML = '<tr><th>Nombre del Archivo</th><th>Link</th><th>Accion</th></tr>'; // Add headers
 
         fileList.forEach(fileName => {
           const encodedFileName = encodeURIComponent(fileName); // Encode filename for URL
